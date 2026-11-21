@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Compagnon & Audio Wolof — Studio Yaatal Pro</title>
+  <meta name="description" content="Téléchargez les 10 fiches bonus imprimables et écoutez la prononciation wolof du cahier bilingue Français – Wolof (4–8 ans) d'Abdourahmane Ndiaye — Studio Yaatal Pro.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231A2238'/><text x='32' y='44' font-size='34' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23E5A93B'>Y</text></svg>">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-pill">Studio Yaatal Pro · Compagnon Officiel</div>
+      <nav class="quick-nav" aria-label="Navigation rapide">
+        <a href="#fiches-bonus">10 Fiches PDF</a>
+        <a href="#prononciation">Audio &amp; Prononciation</a>
+        <a href="#avis-amazon">Avis Amazon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="welcome-tag">Dalal ak jàmm ! · Bienvenue dans votre espace lecteur</div>
+          <h1>Mon Premier Cahier d'Activités Bilingue Français – Wolof</h1>
+          <p class="hero-subtitle">
+            Pour les enfants de <strong>4 à 8 ans</strong>, les parents et les grands-parents.
+            Retrouvez ici votre <strong>Pack de 10 fiches bonus imprimables</strong> et le
+            <strong>guide complet de prononciation wolof</strong> pour accompagner les 5 chapitres du livre.
+          </p>
+          <div class="hero-actions" id="fiches-bonus">
+            <a class="btn-primary" href="./downloads/pack_10_fiches_bonus_yaatal_pro.pdf" download="pack_10_fiches_bonus_yaatal_pro.pdf">
+              <span aria-hidden="true">📥</span>
+              Télécharger les 10 Fiches Bonus (PDF)
+            </a>
+            <a class="btn-secondary" href="#prononciation">
+              <span aria-hidden="true">🎧</span>
+              Explorer les 44 mots &amp; sons
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span><strong>Auteur :</strong> Abdourahmane Ndiaye</span>
+            <span><strong>Édition :</strong> Studio Yaatal Pro (58 pages)</span>
+            <span><strong>ISBN :</strong> 9798144391009</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="cover-card">
+            <img
+              src="./assets/cover-preview.png"
+              alt="Couverture du livre Mon Premier Cahier d'Activités Bilingue Français – Wolof (4–8 ans)"
+              width="300"
+              height="388"
+            >
+            <div class="cover-caption">Format 8,5 × 11 po · Coloriage &amp; écriture N&amp;B</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Résumé du Pack Bonus -->
+    <section class="bonus-summary">
+      <div class="container">
+        <div class="summary-banner">
+          <div>
+            <h2>Contenu du Pack Bonus Imprimable (10 Fiches A4/Letter N&amp;B)</h2>
+            <p>Cartes-mémoire à découper, labyrinthe des salutations, médaillons et mots mêlés de la famille, dominos et mission baobab (1 à 10), devinettes des animaux, pantin du corps humain à légender et Passeport du Savoir.</p>
+          </div>
+          <a class="btn-emerald" href="./downloads/pack_10_fiches_bonus_yaatal_pro.pdf" target="_blank" rel="noopener">
+            Ouvrir le PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explorateur Audio & Prononciation -->
+    <section class="explorer-section" id="prononciation">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Guide Audio &amp; Clés de Prononciation Wolof</h2>
+            <p>Sélectionnez un onglet ou recherchez un mot pour afficher le découpage syllabique et écouter l'audio.</p>
+          </div>
+          <div class="search-wrap">
+            <label for="word-search" class="sr-only">Rechercher un mot en wolof ou en français</label>
+            <input
+              id="word-search"
+              type="search"
+              placeholder="Rechercher : Salamalekum, Benn..."
+              autocomplete="off"
+            >
+          </div>
+        </div>
+
+        <div class="tabs-bar" role="tablist" aria-label="Chapitres du cahier">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="cles">
+            Clés X, Ñ, Ë
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="ch1">
+            Ch. 1 · Salutations
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="ch2">
+            Ch. 2 · Famille
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="ch3">
+            Ch. 3 · Compter 1–10
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="ch4">
+            Ch. 4 · Animaux
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="ch5">
+            Ch. 5 · Corps
+          </button>
+        </div>
+
+        <!-- Bandeau lecteur actif / repli phonétique -->
+        <div id="audio-status-banner" class="audio-banner" role="status" aria-live="polite" hidden>
+          <div class="audio-banner-badge" id="audio-banner-mode">Prononciation guidée</div>
+          <div class="audio-banner-body">
+            <strong id="audio-banner-word"></strong>
+            <span id="audio-banner-text"></span>
+          </div>
+          <button type="button" class="audio-banner-close" id="audio-banner-close" aria-label="Fermer le lecteur">✕</button>
+        </div>
+
+        <!-- Grille dynamique -->
+        <div id="explorer-content" class="cards-grid"></div>
+      </div>
+    </section>
+
+    <!-- Avis Amazon & Famille -->
+    <section class="community-section" id="avis-amazon">
+      <div class="container community-grid">
+        <div class="community-card">
+          <h3>Votre avis aide d'autres familles !</h3>
+          <p>
+            Si votre enfant prend plaisir à dire <em>Salamalekum / Malekum salaam</em>, à compter de <em>Benn</em> à <em>Fukk</em> ou à nommer sa famille en wolof, laissez quelques mots et étoiles sur Amazon. Chaque retour aide un projet indépendant de transmission culturelle.
+          </p>
+          <a class="btn-terracotta" href="https://www.amazon.fr/s?k=9798144391009" target="_blank" rel="noopener">
+            Laisser un avis sur Amazon (ISBN 9798144391009)
+          </a>
+        </div>
+        <div class="community-card tip-card">
+          <h3>Astuce rituel 5 minutes / jour</h3>
+          <ul class="ritual-list">
+            <li><strong>Matin :</strong> « <em>Naka suba si ?</em> » au réveil et « <em>Jërëjëf / Ñoo ko bokk</em> » à table.</li>
+            <li><strong>En famille :</strong> Nommez toujours les proches avec « <em>Sama...</em> » (mon/ma).</li>
+            <li><strong>En marchant :</strong> Comptez les marches de <em>Benn</em> à <em>Fukk</em> (1 à 10).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Abdourahmane Ndiaye — Studio Yaatal Pro</strong>. Tous droits réservés.</p>
+      <p>Mon Premier Cahier d'Activités Bilingue Français – Wolof (4–8 ans) · ISBN 9798144391009</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

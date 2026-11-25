@@ -539,3 +539,19 @@ body {
     max-width: 240px;
   }
 }
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--cream-warm);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.85rem;
+}
+
+.lang-switch a.lang-active {
+  color: var(--terracotta);
+  font-weight: 800;
+}
